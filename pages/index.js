@@ -1,3 +1,10 @@
+  // Para usar a função e obter o HTML:
+  const htmlContent = gerarPaginaHTML();
+  console.log(htmlContent); // Isso mostrará o HTML no console
+  
+  // Chame esta função para substituir o conteúdo da página atual
+  // inserirPagina();
+
 function Home() {
     document.body.innerHTML = gerarPaginaHTML();
  
@@ -56,11 +63,6 @@ function gerarPaginaHTML() {
     `;
   }
   
-  // Para usar a função e obter o HTML:
-  const htmlContent = gerarPaginaHTML();
-  console.log(htmlContent); // Isso mostrará o HTML no console
-  
-  // Chame esta função para substituir o conteúdo da página atual
-  // inserirPagina();
+
 
 export default Home;
