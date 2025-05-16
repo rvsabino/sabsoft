@@ -34,7 +34,6 @@ export default async function migrations(request, response) {
     }
 
     if (request.method === "POST") {
-      // await dbClient.end();
       const migratedMigrations = await migrationsRunner({
         ...defaultMigrationOptions,
         dryRun: false,
