@@ -4,8 +4,8 @@ on: pull_request
 
 jobs:
   jest:
-    main: Jest Ubuntu
-    runs-on: ubuntu-latest
+    main: Jest Windows
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
 
