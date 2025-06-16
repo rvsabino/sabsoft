@@ -10,8 +10,6 @@ test("GET to /api/v1/status shoud return 200", async () => {
 
   const responseBody = await response.json();
 
-  const variavelNaoUsada;
-
   expect(responseBody.updated_at).toBeDefined();
   expect(responseBody.max_connections);
 
