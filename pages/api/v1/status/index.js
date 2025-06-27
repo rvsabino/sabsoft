@@ -1,8 +1,8 @@
 import database from "infra/database.js";
-import { Connection } from "pg";
-import { version } from "react";
 
 async function status(request, response) {
+  let variavelEsquecida;
+
   const updatedAt = new Date().toISOString();
 
   const databaseName = process.env.POSTGRES_DB;

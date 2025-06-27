@@ -11,7 +11,7 @@ test("GET to /api/v1/status shoud return 200", async () => {
   const responseBody = await response.json();
 
   expect(responseBody.updated_at).toBeDefined();
-  expect(responseBody.max_connections);
+  //expect(responseBody.max_connections);
 
   const parcedUpdatedAt = new Date(responseBody.updated_at).toISOString();
   expect(responseBody.updated_at).toEqual(parcedUpdatedAt);
