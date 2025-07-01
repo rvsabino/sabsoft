@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import database from "infra/database.js";
-=======
 import database from "infra/database";
->>>>>>> main
 
 async function status(request, response) {
   const updatedAt = new Date().toISOString();
@@ -11,7 +7,7 @@ async function status(request, response) {
   const databaseVersionValue = databaseVersionResult.rows[0].server_version;
 
   const databaseMaxConnectionsResult = await database.query(
-    "SHOW max_connections;"
+    "SHOW max_connections;",
   );
   const databaseMaxConnectionsValue =
     databaseMaxConnectionsResult.rows[0].max_connections;
