@@ -24,10 +24,10 @@ async function clearDatabase() {
   await database.query("drop schema public cascade; create schema public;");
 }
 
-const orquestrator = {
+const orchestrator = {
   waitForAllServices,
   clearDatabase,
 };
 
-export default orquestrator;
+export default orchestrator;
 //
